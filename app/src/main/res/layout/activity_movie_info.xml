@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/bgcolor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:context=".MovieInfo">
+
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/poster"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/sfregular"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Fantastic Beasts: The Secrets of Dumbledore"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            app:layout_constraintLeft_toRightOf="@id/poster"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfregular"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="tagline: Return to the magic."
+            android:textColor="@color/whiteS"
+            android:textSize="16sp"
+
+            app:layout_constraintLeft_toRightOf="@id/poster"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfregular"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Genre: Action, Adventure, Fantasy"
+            android:textColor="@color/whiteS"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/poster"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tagline" />
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfregular"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Language: Cantonese, English, Spanish"
+            android:textColor="@color/whiteS"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@id/poster"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/genre" />
+
+        <ImageView
+            android:id="@+id/voteLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_vote"
+            app:layout_constraintLeft_toRightOf="@id/poster"
+            app:layout_constraintTop_toBottomOf="@id/language" />
+
+        <TextView
+            android:id="@+id/voteAverage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/sfregular"
+            android:text="7.4"
+            android:textColor="@color/whiteS"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@id/voteLogo"
+            app:layout_constraintTop_toBottomOf="@id/language" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="18dp"
+            android:fontFamily="@font/sfregular"
+            android:text="Vote Count: 2021"
+            android:textColor="@color/whiteS"
+            android:textSize="15sp"
+            android:id="@+id/voteCount"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/language" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poster"
+            android:id="@+id/overviewHeader"
+            android:textColor="@color/whiteH"
+            android:text="Overview"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/sfregular"
+            android:textSize="21sp"
+            android:layout_marginLeft="14dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/overviewHeader"
+            android:text="Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary."
+            android:textColor="@color/white80"
+            android:padding="9dp"
+            android:layout_marginLeft="5dp"
+            android:justificationMode="inter_word"
+            android:textSize="17sp"
+            android:fontFamily="@font/sfregular"
+            android:id="@+id/overview"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/overview"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="9dp"
+            android:id="@+id/line"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            android:text="Status: Released"
+            android:fontFamily="@font/sfregular"
+            android:textColor="@color/white80"
+            android:textSize="16sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/releaseStatus"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfregular"
+            android:textColor="@color/white80"
+            android:textSize="16sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/releaseDate"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Release Date: 2022-05-04"
+            android:layout_marginRight="14dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/releaseStatus"
+            android:text="Budget: $200000000"
+            android:fontFamily="@font/sfregular"
+            android:textColor="@color/white80"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/budget"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/budget"
+            android:text="Revenue Collected: $873000000"
+            android:fontFamily="@font/sfregular"
+            android:textColor="@color/white80"
+            android:textSize="16sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/revenue"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfregular"
+            android:textColor="@color/white80"
+            android:textSize="16sp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/runtime"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/revenue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Runtime: 126 mins"
+            android:layout_marginLeft="14dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfregular"
+            android:textColor="@color/white80"
+            android:textSize="16sp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/popularity"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/runtime"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Popularity: 3012.636"
+            android:layout_marginLeft="14dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popularity"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="9dp"
+            android:id="@+id/line1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line1"
+            android:textColor="@color/white80"
+            android:fontFamily="@font/sfregular"
+            android:textSize="16sp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="14dp"
+            android:justificationMode="inter_word"
+            android:text="Production Companies: Marvel Studios"
+            android:id="@+id/productionComp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productionComp"
+            android:textColor="@color/white80"
+            android:fontFamily="@font/sfregular"
+            android:textSize="16sp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:text="Production Countries: US"
+            android:id="@+id/productionCountries"
+            android:layout_marginTop="7dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productionCountries"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="9dp"
+            android:id="@+id/line2"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2"
+            android:textColor="@color/whiteH"
+            android:text="Get more details on: "
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/sfregular"
+            android:textSize="21sp"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/moreDetailsHeader"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/moreDetailsHeader"
+            android:src="@drawable/ic_imdb_logo"
+            android:layout_marginTop="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/imdb"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="900dp"
+            android:id="@+id/progressLayout"
+            android:layout_height="900dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/bgcolor"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
