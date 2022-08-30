@@ -21,28 +21,5 @@
         android:textColor="#F2FFFFFF"
         />
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/logo"
-        android:text="presented by"
-        android:textColor="#BFFFFFFF"
-        android:gravity="center"
-        android:fontFamily="@font/sfregular"
-        android:layout_marginBottom="10dp"
-        />
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:id="@+id/logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:src="@drawable/icon"
-        android:layout_marginBottom="50dp"
-        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
